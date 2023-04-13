@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="23147950"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-13 02:44:10 "/>
+        <attribute name="created" value="MjMxNDc5NTA7RVNONTEyTjEyNjI4MjQ7MjAyMy0wMy0zMDsiMDI6MTk6NDggIjsyNDI4"/>
+        <attribute name="edited" value="MjMxNDc5NTA7RVNONTEyTjEyNjI4MjQ7MjAyMy0wNC0xMzsiMDI6NDQ6MTAgIjsyMDsyNTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usu&#225;rio" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <assign variable="recorrente" expression="true"/>
+            <output expression="&quot;Qual o nome do usu&#225;rio?&quot;" newline="True"/>
+            <input variable="usu&#225;rio"/>
+            <while expression="recorrente">
+                <if expression="usu&#225;rio=&quot;Isabella&quot;">
+                    <then>
+                        <declare name="senha" type="String" array="False" size=""/>
+                        <output expression="&quot;insira a senha&quot;" newline="True"/>
+                        <input variable="senha"/>
+                        <if expression="senha=&quot;321&quot;">
+                            <then>
+                                <output expression="&quot;acessando conta...&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;senha incorreta!&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Incorreto&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
